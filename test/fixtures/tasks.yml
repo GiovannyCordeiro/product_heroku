@@ -2,8 +2,8 @@
 
 one:
   title: MyString
-  descriptions: MyString
-
+  description: MyString
+  
 two:
   title: MyString
-  descriptions: MyString
+  description: MyString

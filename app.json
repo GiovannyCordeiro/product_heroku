@@ -1,0 +1,19 @@
+{
+  "name": "Review App for Ruby on Rails",
+  "description": "Temporary Heroku Review App for Pull Requests",
+  "env": {
+    "DATABASE_URL": {
+      "description": "Database connection URL",
+      "required": true
+    },
+    "RAILS_ENV": "production",
+    "RAILS_LOG_TO_STDOUT": "enabled",
+    "RAILS_SERVE_STATIC_FILES": "enabled"
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
+  "scripts": {
+    "postdeploy": "bundle exec rails db:migrate"
+  }
+}

@@ -1,0 +1,13 @@
+
+<div>
+  <% @tasks.each do |task| %>
+    <div class="mt-8">
+      <p>
+        <%= task.title %>
+      </p>
+      <p>
+        <%= task.descriptions %>
+      </p>
+    </div>
+  <% end %>
+</div>

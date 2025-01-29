@@ -4,14 +4,14 @@
   "env": {
     "DATABASE_URL": {
       "description": "Database connection URL",
-      "required": true
+      "required": false
     },
     "RAILS_ENV": "production",
     "RAILS_LOG_TO_STDOUT": "enabled",
     "RAILS_SERVE_STATIC_FILES": "enabled"
   },
   "addons": [
-    "heroku-postgresql:hobby-dev"
+    "heroku-postgresql:essential-0"
   ],
   "scripts": {
     "postdeploy": "bundle exec rails db:migrate"
